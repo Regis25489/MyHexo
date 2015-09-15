@@ -2,7 +2,7 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  文本编辑: /tags/文本编辑
 
 # SubNav
 subnav:
@@ -32,7 +32,8 @@ open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
-favicon: /favicon.png
+#/favicon.png
+favicon: http://tp3.sinaimg.cn/3271417022/180/5716791366/1
 
 #你的头像url
 avatar: http://tp3.sinaimg.cn/3271417022/180/5716791366/1

@@ -71,6 +71,6 @@ deploy:
   type: git
   repo: git@github.com:Regis25489/Regis25489.github.io.git
   branch: master
-  #type: git
-  #repo: git@git.coding.net:regis/HexoBlog.git
-  #branch: master
+  type: git
+  repo: git@git.coding.net:regis/HexoBlog.git
+  branch: master

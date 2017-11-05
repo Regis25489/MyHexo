@@ -46,3 +46,10 @@ deploy:
 > hexo help #查看帮助
 
 > hexo version #查看Hexo的版本
+
+#### Mac安装Hexo出现报错
+> { [Error: Cannot find module './build/Release/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND' }
+```
+$ npm uninstall hexo-cli -g
+$ npm install hexo-cli -g
+```

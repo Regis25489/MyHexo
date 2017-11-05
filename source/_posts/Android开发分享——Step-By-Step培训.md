@@ -11,8 +11,8 @@ tags:
 		Google、中国移动、T-Mobile、三星、高通、德州仪器等领军企业通过开放手机联盟携手开发Android。
 		开放手机联盟旨在开发多种技术，大幅削减移动设备和服务的开发和推广成本。
 	* 2008年推出Android系统的第一个版本，Google，T-mobile、HTC联合促成了世界上第一款基于开源Android手机T-mobile G1的诞生。
-		图1
-		图2
+		![T-Mobile G1](http://7xnve9.com1.z0.glb.clouddn.com/T-Mobile%20%20G1_1.jpg)
+		![T-Mobile G1](http://7xnve9.com1.z0.glb.clouddn.com/T-Mobile%20%20G1_2.jpg)
 	* 2009年推出Android 1.5，提供了非常豪华的用户界面和蓝牙连接支持，吸引了大量开发者
 	* ...
 * Android推出的版本
@@ -44,7 +44,9 @@ tags:
 6.0|Marshmallow(棉花糖)|23
 * 移动市场占有率
 	* 友盟统计
+		![友盟统计](http://7xnve9.com1.z0.glb.clouddn.com/友盟统计.png)
 	* Android Studio
+		![Studio数据](http://7xnve9.com1.z0.glb.clouddn.com/各版本市场占有率.png)
 * Android与Java
 	* Android应用程序是用Java语言写成的，使用JDK的javac(或等效工具，例如ECJ)来编译。
 		这个过程产生标准的Java字节码（.class文件）,这些文件再转化成Android的.dex文件，
@@ -56,6 +58,7 @@ tags:
 		如果你懂得Java编程(深入到高级的，底层的细节)，你也就懂得Android编程，你只需要学一些新的API和框架概念，他们是对等的系统。
 * Android平台架构及特性
 	经典平台架构图
+    ![平台架构图](http://7xnve9.com1.z0.glb.clouddn.com/Android平台架构.JPG)
 	* 1.Linux内核层
 		Android系统是基于Linux 2.6内核的，这一层为Android设备的各种硬件提供了底层的驱动，如显示驱动、音频驱动、照相机驱动、蓝牙驱动、Wi-Fi 驱动、电源管理等。
 	* 2.系统运行库层
@@ -90,7 +93,9 @@ tags:
 		* Android Studio
 * HelloWorld及项目目录结构分析
 	* Eclipse项目目录
+		![Eclipse项目目录](http://7xnve9.com1.z0.glb.clouddn.com/Eclipse目录.png)
 	* Android Studio项目目录
+		![Studio项目目录](http://7xnve9.com1.z0.glb.clouddn.com/AS项目目录.png)
 	* Log打印输出
 		Log.i(tag,msg);
 
@@ -131,6 +136,7 @@ tags:
 * Activity
 	* 初始化Activity
 		经典Activity生命周期调用图
+        ![Activity生命周期](http://7xnve9.com1.z0.glb.clouddn.com/Activity生命周期.png)
 		* onCreate
 		* onStart
 		* onResume

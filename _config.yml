@@ -69,8 +69,5 @@ theme: yilia
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://git.coding.net/regis/HexoBlog.git
-  branch: master
-- type: git
-  repo: git@github.com:Regis25489/Regis25489.github.io.git
+  repo: https://github.com/Regis25489/Regis25489.github.io.git
   branch: master

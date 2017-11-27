@@ -22,31 +22,31 @@ tags: 常用命令
     格式: git config [–local|–global|–system] –e
 
 ### 初始化配置
-```
-#配置使用git仓库的人员姓名  
-git config --global user.name "Your Name"  
-  
-#配置使用git仓库的人员email  
-git config --global user.email "email@example.com"
-  
-#配置到缓存 默认15分钟  
-git config --global credential.helper cache   
-  
-#修改缓存时间  
-git config --global credential.helper 'cache --timeout=3600'    
-  
-git config --global color.ui true  
-git config --global alias.co checkout  
-git config --global alias.ci commit  
-git config --global alias.st status  
-git config --global alias.br branch  
-git config --global core.editor "mate -w"    # 设置Editor使用textmate  
-git config -1 #列举所有配置  
-  
-#用户的git配置文件~/.gitconfig  
-```
+    
+    #配置使用git仓库的人员姓名  
+    git config --global user.name "Your Name"  
+      
+    #配置使用git仓库的人员email  
+    git config --global user.email "email@example.com"
+      
+    #配置到缓存 默认15分钟  
+    git config --global credential.helper cache   
+      
+    #修改缓存时间  
+    git config --global credential.helper 'cache --timeout=3600'    
+      
+    git config --global color.ui true  
+    git config --global alias.co checkout  
+    git config --global alias.ci commit  
+    git config --global alias.st status  
+    git config --global alias.br branch  
+    git config --global core.editor "mate -w"    # 设置Editor使用textmate  
+    git config -1 #列举所有配置  
+      
+    #用户的git配置文件~/.gitconfig  
+
 ### 查看、添加、提交、删除、找回，重置修改文件
-```
+```bash
 git help <command>  # 显示command的help  
 git show            # 显示某次提交的内容  
 git show $id  
@@ -76,7 +76,7 @@ git revert HEAD     # 恢复最后一次提交的状态
 ```
 
 ### 查看文件diff
-```
+```bash
 git diff <file>     # 比较当前文件和暂存区文件差异  
 git diff  
 git diff <$id1> <$id2>   # 比较两次提交之间的差异  
@@ -87,7 +87,7 @@ git diff --stat     # 仅仅比较统计信息
 ```
 
 ### 查看提交记录
-```
+```bash
 git log  
 git log <file>      # 查看该文件每次提交记录  
 git log -p <file>   # 查看每次详细修改内容的diff  
@@ -96,7 +96,7 @@ git log --stat      #查看提交统计信息
 ```
 
 ### 取得Git仓库
-```
+```bash
 #初始化一个版本仓库  
 git init  
   
@@ -111,7 +111,7 @@ git remote -v
 ```
 
 ### 提交你的修改
-```
+```bash
 #添加当前修改的文件到暂存区  
 git add .  
   
@@ -160,7 +160,7 @@ git checkout –- readme.txt
 ```
 
 ### 查看、切换、创建和删除分支
-```
+```bash
 git br -r           # 查看远程分支  
 git br <new_branch> # 创建新的分支  
 git br -v           # 查看各个分支最后提交信息  
@@ -179,7 +179,7 @@ git br -D <branch>  # 强制删除某个分支 (未被合并的分支被删除�
 ```
 
 ### 分支合并和rebase
-```
+```bash
 git merge <branch>               # 将branch分支合并到当前分支  
 git merge origin/master --no-ff  # 不要Fast-Foward合并，这样可以生成merge提交  
    
@@ -188,14 +188,14 @@ git co <branch> && git rebase master && git co master && git merge <branch>
 ```
 
 ### Git补丁管理(方便在多台机器上开发同步时用)
-```
+```bash
 git diff > ../sync.patch         # 生成补丁  
 git apply ../sync.patch          # 打补丁  
 git apply --check ../sync.patch  #测试补丁能否成功  
 ```
 
 ### Git暂存管理
-```
+```bash
 git stash                        # 暂存  
 git stash list                   # 列所有stash  
 git stash apply                  # 恢复暂存的内容  
@@ -203,7 +203,7 @@ git stash drop                   # 删除暂存区
 ```
 
 ### Git远程分支管理
-```
+```bash
 git pull                         # 抓取远程仓库所有分支更新并合并到本地  
 git pull --no-ff                 # 抓取远程仓库所有分支更新并合并到本地，不要快进合并  
 git fetch origin                 # 抓取远程仓库更新  
@@ -220,7 +220,7 @@ git push origin :<remote_branch>  #先删除本地分支(git br -d <branch>)，�
 ```
 
 ### 基本的分支管理
-```
+```bash
 #创建一个分支  
 git branch iss53  
   
@@ -250,7 +250,7 @@ git checkout –b dev origin/develop
 ```
 
 ### Git远程仓库管理
-```
+```bash
 git remote -v                    # 查看远程服务器地址和仓库名称  
 git remote show origin           # 查看远程服务器仓库状态  
 git remote add origin git@ github:robbin/robbin_site.git         # 添加远程仓库地址  
@@ -259,7 +259,7 @@ git remote rm <repository>       # 删除远程仓库
 ```
 
 ### 创建远程仓库
-```
+```bash
 git clone --bare robbin_site robbin_site.git  # 用带版本的项目创建纯版本仓库  
 scp -r my_project.git git@ git.csdn.net:~      # 将纯仓库上传到服务器上  
    
@@ -272,7 +272,7 @@ git remote set-head origin master   # 设置远程仓库的HEAD指向master分�
 ```
 
 ### 设置跟踪远程库和本地库
-```
+```bash
 git branch --set-upstream master origin/master  
 git branch --set-upstream develop origin/develop  
 ```
